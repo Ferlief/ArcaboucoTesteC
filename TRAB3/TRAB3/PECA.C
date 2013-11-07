@@ -1,6 +1,6 @@
 /***************************************************************************
 *
-*  $MCD Módulo de definição: PEC  Peça do tabuleiro
+*  $MCD Mï¿½dulo de definiï¿½ï¿½o: PEC  Peï¿½a do tabuleiro
 *
 *  Arquivo gerado:              PECA.H
 *  Letras identificadoras:      PEC
@@ -11,10 +11,10 @@
 *                 fr - Fernanda C Ribeiro
 *			         vo - Vinicius de Luiz de Oliveira
 *
-*  $HA Histórico de evolução:
-*     Versão  Autor    Data     Observações
-*     Y       afv   xx/xx/2013  finalização do desenvolvimento do modulo
-*     1       afv   24/out/2013 início do desenvolvimento do módulo
+*  $HA Histï¿½rico de evoluï¿½ï¿½o:
+*     Versï¿½o  Autor    Data     Observaï¿½ï¿½es
+*     Y       afv   xx/xx/2013  finalizaï¿½ï¿½o do desenvolvimento do modulo
+*     1       afv   24/out/2013 inï¿½cio do desenvolvimento do mï¿½dulo
 *
 ***************************************************************************/
 
@@ -24,7 +24,7 @@
 #include   <malloc.h>
 #include   <assert.h>
 
-
+//teste
 #define PECA_OWN
 #include "PECA.H"
 #undef PECA_OWN
@@ -43,30 +43,30 @@
    typedef struct PEC_tagElemPeca {
 
 		char Nome[MAX_NOME];
-		/* String com o nome da peça */
+		/* String com o nome da peï¿½a */
 
 		int diagonal;
-		/* Se peça pode ir para diagonal 
-		(1 para sim, 0 caso contrário) */
+		/* Se peï¿½a pode ir para diagonal 
+		(1 para sim, 0 caso contrï¿½rio) */
 
 		int reta;
-		/* Se peça pode ir para horizontal e vertical
-		 (1 para sim, 0 caso contrário) */
+		/* Se peï¿½a pode ir para horizontal e vertical
+		 (1 para sim, 0 caso contrï¿½rio) */
 
 		int qtde;
-		/* Quantidade casas que a peça pode andar */
+		/* Quantidade casas que a peï¿½a pode andar */
 		  
    } PEC_tpElemPeca ;
 
-/***** Protótipos das funções encapsuladas no módulo *****/
+/***** Protï¿½tipos das funï¿½ï¿½es encapsuladas no mï¿½dulo *****/
 
 
 
-/*****  Código das funções exportadas pelo módulo  *****/
+/*****  Cï¿½digo das funï¿½ï¿½es exportadas pelo mï¿½dulo  *****/
 
 /***************************************************************************
 *
-*  Função: PEC  &Criar peca
+*  Funï¿½ï¿½o: PEC  &Criar peca
 *  ****/
 
 PEC_tpCondRet PEC_CriarPeca(PEC_tppPeca * pPeca, int Diag , int Reta , 
@@ -98,11 +98,11 @@ PEC_tpCondRet PEC_CriarPeca(PEC_tppPeca * pPeca, int Diag , int Reta ,
 	
 	return PEC_CondRetOK;
 	
-} /* Fim função: PEC &Criar Peca */
+} /* Fim funï¿½ï¿½o: PEC &Criar Peca */
 
 /***************************************************************************
 *
-*  Função: PEC  &Obter nome
+*  Funï¿½ï¿½o: PEC  &Obter nome
 *  ****/
 
 PEC_tpCondRet PEC_ObterNome (PEC_tppPeca pPeca ,  void ** NomePeca)
@@ -116,11 +116,11 @@ PEC_tpCondRet PEC_ObterNome (PEC_tppPeca pPeca ,  void ** NomePeca)
 
 	
 	return PEC_CondRetOK;
-} /* Fim função: PEC &Obter nome */
+} /* Fim funï¿½ï¿½o: PEC &Obter nome */
 
 /***************************************************************************
 *
-*  Função: PEC  &Obter dados do tipo peça
+*  Funï¿½ï¿½o: PEC  &Obter dados do tipo peï¿½a
 *  ****/
 
 PEC_tpCondRet PEC_ObterDadosTipoPeca (PEC_tppPeca pPeca , void ** Nome, 
@@ -138,11 +138,11 @@ PEC_tpCondRet PEC_ObterDadosTipoPeca (PEC_tppPeca pPeca , void ** Nome,
 
 	return PEC_CondRetOK;
 
-} /* Fim função: PEC &Obter dados do tipo peça */
+} /* Fim funï¿½ï¿½o: PEC &Obter dados do tipo peï¿½a */
 
 
-/*****  Código das funções encapsuladas pelo módulo  *****/
+/*****  Cï¿½digo das funï¿½ï¿½es encapsuladas pelo mï¿½dulo  *****/
 
 
-/********** Fim do módulo de implementação: PEC  Peça do tabuleiro **********/
+/********** Fim do mï¿½dulo de implementaï¿½ï¿½o: PEC  Peï¿½a do tabuleiro **********/
 
